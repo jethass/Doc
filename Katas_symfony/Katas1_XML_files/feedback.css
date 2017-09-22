@@ -1,0 +1,178 @@
+.btn {
+  border: 0;
+  border-radius: 0;
+  outline: none !important;
+}
+.feedback a {
+  color: #2982BB;
+}
+.feedback h4 {
+  margin-bottom: 10px;
+}
+.feedback .feedback-link {
+  position: fixed;
+  top: 310px;
+  z-index: 20000;
+}
+.feedback .trigger {
+  color: #FFFFFF;
+  background-color: #2982BB;
+  display: block;
+  font-weight: bold;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+.feedback .trigger:hover {
+  background-color: #5bc0de;
+  text-decoration: none;
+}
+.feedback.left .feedback-link {
+  left: 0;
+}
+.feedback.left .trigger {
+  margin-left: -28px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.feedback.right .feedback-link {
+  right: 0;
+}
+.feedback.right .trigger {
+  margin-right: -28px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#feedback-modal .modal-dialog {
+  top: 200px;
+}
+#feedback-modal.fade .modal-dialog {
+  -webkit-transform: translate3d(-25%, 0, 0);
+  transform: translate3d(-25%, 0, 0);
+}
+#feedback-modal.in .modal-dialog {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+#feedback-modal.left.fade .modal-dialog {
+  -webkit-transition: -webkit-transform "left 0.5s ease-in-out";
+  -moz-transition: -moz-transform "left 0.5s ease-in-out";
+  -o-transition: -o-transform "left 0.5s ease-in-out";
+  transition: transform "left 0.5s ease-in-out";
+}
+#feedback-modal.left .modal-dialog {
+  margin-left: 0;
+}
+#feedback-modal.right.fade .modal-dialog {
+  -webkit-transition: -webkit-transform "right 0.5s ease-in-out";
+  -moz-transition: -moz-transform "right 0.5s ease-in-out";
+  -o-transition: -o-transform "right 0.5s ease-in-out";
+  transition: transform "right 0.5s ease-in-out";
+}
+#feedback-modal.right .modal-dialog {
+  margin-right: 0;
+}
+#feedback-modal .modal-body {
+  max-height: 500px;
+}
+#feedback-modal h4 {
+  font-size: 30px;
+  font-weight: normal;
+}
+#feedback-modal a {
+  border-radius: 3px !important;
+}
+#feedback-modal .chat-with-us {
+  border: 0;
+  border-radius: 0;
+  outline: none !important;
+  border-radius: 3px !important;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  background-image: url("../../bundles/feedback/img/feedback-chat.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  padding-left: 38px;
+}
+#feedback-modal .chat-with-us,
+#feedback-modal .chat-with-us:hover {
+  background-position: 10px 4px;
+}
+#feedback-modal .feedback-type {
+  margin: 19px 0px;
+}
+#feedback-modal .feedback-type a {
+  margin-right: 8px;
+  padding: 11px 8px 7px 25px;
+  text-decoration: none;
+  background-repeat: no-repeat !important;
+  border-radius: 3px !important;
+  color: #2982BB;
+}
+#feedback-modal .feedback-type a.active,
+#feedback-modal .feedback-type a:focus {
+  background-color: #2982BB;
+  color: #FFFFFF;
+}
+#feedback-modal .feedback-type a[data-value="idea"] {
+  background-image: url("../../bundles/feedback/img/feedback-idea.png");
+  background-position: 5px 5px;
+}
+#feedback-modal .feedback-type a.active[data-value="idea"] {
+  background-image: url("../../bundles/feedback/img/feedback-idea-white.png");
+}
+#feedback-modal .feedback-type a[data-value="problem"] {
+  background-image: url("../../bundles/feedback/img/feedback-problem.png");
+  background-position: 3px 6px;
+}
+#feedback-modal .feedback-type a.active[data-value="problem"] {
+  background-image: url("../../bundles/feedback/img/feedback-problem-white.png");
+}
+#feedback-modal .feedback-type a[data-value="question"] {
+  background-image: url("../../bundles/feedback/img/feedback-question.png");
+  background-position: 4px 8px;
+}
+#feedback-modal .feedback-type a.active[data-value="question"] {
+  background-image: url("../../bundles/feedback/img/feedback-question-white.png");
+}
+#feedback-modal .feedback-type a[data-value="praise"] {
+  background-image: url("../../bundles/feedback/img/feedback-praise.png");
+  background-position: 4px 10px;
+}
+#feedback-modal .feedback-type a.active[data-value="praise"] {
+  background-image: url("../../bundles/feedback/img/feedback-praise-white.png");
+}
+#feedback-modal label[for="feedback_email"] {
+  font-size: 18px;
+  display: inline;
+}
+#feedback-modal input#feedback_email {
+  font-size: 17px;
+  margin-top: 3px;
+  padding: 7px;
+  width: 65%;
+}
+#feedback-modal textarea {
+  width: 98%;
+  resize: vertical;
+  padding-right: 3px;
+  font-size: 14px;
+}
+#feedback-modal button {
+  float: right;
+}
+#feedback-modal .loading {
+  padding: 50px 0;
+  text-align: center;
+}
+#feedback-modal .loading img {
+  margin-bottom: 10px;
+}

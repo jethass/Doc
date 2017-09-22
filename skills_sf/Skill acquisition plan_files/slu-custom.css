@@ -1,0 +1,186 @@
+#sln {
+    background: #2f2f2f;
+    height: 36px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9000;
+}
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+    background: none;
+}
+.ui.primary.button, .ui.primary.buttons .button {
+    background-color: #5BA8A5;
+}
+
+.ui.primary.button:hover, .ui.primary.buttons .button:hover {
+    background-color: #398C89;
+}
+
+.ui.basic.primary.button, .ui.basic.primary.buttons .button {
+    box-shadow: 0 0 0 1px #5BA8A5 inset!important;
+    color: #5BA8A5!important;
+}
+.ui.basic.primary.button:hover, .ui.basic.primary.buttons .button:hover {
+    background: 0 0!important;
+    box-shadow: 0 0 0 1px #398C89 inset!important;
+    color: #398C89!important;
+}
+.ui.progress {
+    margin: 0;
+}
+
+#title .ui.secondary.menu .item {
+    color: #FFF;
+}
+
+a {
+    color: #5BA8A5;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.img-user {
+    border-radius: 50%;
+    height: 30px !important;
+    width: 30px !important;
+    margin-top: -5px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#main-slider .carousel .item{
+    background-color: #5ba8a5;
+}
+
+body {
+    padding-top: 60px;
+}
+
+.emerald {
+    background-color: #5BA8A5;
+}
+
+.container {
+    max-width: 1245px;
+}
+
+.home-welcome {
+    background-image: none;
+    padding: 0;
+}
+
+footer a, footer a:link, footer a:visited {
+    text-decoration: none;
+}
+
+.pure-u-1-2, .pure-u-12-24 {
+    width: 100%;
+}
+
+.time .label {
+    color: black;
+}
+
+.black {
+    color: #000000;
+}
+
+body > section {
+    padding: 15px 0;
+}
+
+.main-example .count {
+    font-size: 2.2em;
+}
+
+.tab-margin {
+    margin-left: 71px
+}
+
+a:hover,
+a:focus {
+    color: #7e7e7e;
+    text-decoration: none;
+    outline: none;
+}
+
+#theory-1 {
+    margin: 80px 0 0 0;
+}
+
+.btn-social.btn-github {
+    background: none repeat scroll 0 0 #000000;
+}
+
+.btn-social.btn-tw {
+    background: none repeat scroll 0 0 #5bceff;
+}
+
+.carousel-inner {
+    background-color: #ffffff;
+}
+
+header .ui.secondary.menu {
+    top: 36px;
+    background: #FFF;
+}
+
+header .ui.menu.fixed, header .ui.menu.fixed .item:first-child, header .ui.menu.fixed .item:last-child {
+    border-radius: .28571429rem!important;
+}
+
+header .ui.menu.fixed, header .ui.menu.fixed .dropdown.item:first-child, header .ui.menu.fixed .dropdown.item:last-child {
+    border-bottom-right-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+
+header .ui.menu .item {
+    color: #222!important;
+}
+header .ui.menu .item:hover {
+    color: #222!important;
+    background: #EEE;
+}
+header .ui.menu .header.item:hover {
+    background-color: #FFF!important;
+}
+.ui.secondary.menu .active.item:hover {
+    background: rgba(0,0,0,.15);
+}
+
+header .ui.secondary.menu .dropdown.item>.menu, header .ui.text.menu .dropdown.item>.menu {
+    background: #EEE;
+}
+header .ui.secondary.menu .dropdown.item>.menu a, header .ui.text.menu .dropdown.item>.menu a {
+    color: #222!important;
+}
+header .ui.secondary.menu .dropdown.item>.menu a:hover, header .ui.text.menu .dropdown.item>.menu a:hover {
+    color: #222!important;
+}
+header .ui.secondary.menu .active.item {
+    background: #5BA8A5!important;
+    color: #FFF!important;
+}
+
+@font-face {
+  font-family: 'symfony';
+  src:  url('/fonts/symfony.eot?bpo5on');
+  src:  url('/fonts/symfony.eot?bpo5on#iefix') format('embedded-opentype'),
+    url('/fonts/symfony.ttf?bpo5on') format('truetype'),
+    url('/fonts/symfony.woff?bpo5on') format('woff'),
+    url('/fonts/symfony.svg?bpo5on#symfony') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i.icon.symfony {
+  font-family: 'symfony' !important;
+}
+
+i.icon.symfony:before {
+    content: "\e900";
+}

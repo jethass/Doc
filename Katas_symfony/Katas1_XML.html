@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://university.sensiolabs.com/katas/001 -->
+<html lang="en" class="csstransforms csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Katas</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="http://university.sensiolabs.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://university.sensiolabs.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://university.sensiolabs.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://university.sensiolabs.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://university.sensiolabs.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://university.sensiolabs.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://university.sensiolabs.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://university.sensiolabs.com/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://university.sensiolabs.com/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="http://university.sensiolabs.com/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://university.sensiolabs.com/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://university.sensiolabs.com/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://university.sensiolabs.com/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="http://university.sensiolabs.com/manifest.json">
+    <link rel="mask-icon" href="http://university.sensiolabs.com/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="SensioLabs University">
+    <meta name="application-name" content="SensioLabs University">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="./Katas1_XML_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Katas1_XML_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./Katas1_XML_files/prettyPhoto.css" rel="stylesheet">
+    <link href="./Katas1_XML_files/animate.css" rel="stylesheet">
+    <link href="./Katas1_XML_files/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Katas1_XML_files/font-awesome.min(1).css">
+    <link rel="stylesheet" href="./Katas1_XML_files/prism.css">
+    <link rel="stylesheet" href="./Katas1_XML_files/prism-show-language.css">
+    <style>
+#sln {
+    background: #2f2f2f;
+    height: 36px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9000;
+}
+    </style>
+    <style>
+blockquote {
+    margin: 0 0 0 20px;
+}
+blockquote p {
+    font-size: inherit;
+}
+
+.kata-story ul {
+    list-style: none;
+    padding: 0;
+}
+.kata-story li {
+    padding-left: 1.3em;
+}
+.kata-story li:before {
+    content: "\f046"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+}
+.kata-steps li:not(:first-child):not(:last-child) {
+    margin: 30px 0;
+}
+.kata-steps li li {
+    margin: 0!important;
+}
+
+.kata-solution h4:not(:first-child) {
+    margin-top: 40px;
+}
+</style>
+
+    <link href="./Katas1_XML_files/overright.css" rel="stylesheet">
+
+    <link href="./Katas1_XML_files/feedback.css" rel="stylesheet">
+    <link href="./Katas1_XML_files/sln.css" rel="stylesheet" type="text/css" media="all">
+    <!--[if lt IE 9]>
+    <script src="/bundles/app/new/js/html5shiv.js"></script>
+    <script src="/bundles/app/new/js/respond.min.js"></script>
+    <![endif]-->
+        
+    <link rel="shortcut icon" href="http://university.sensiolabs.com/bundles/app/new/images/ico/slu-ico.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://university.sensiolabs.com/bundles/app/new/images/ico/slu-ico.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://university.sensiolabs.com/bundles/app/new/images/ico/slu-ico.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://university.sensiolabs.com/bundles/app/new/images/ico/slu-ico.png">
+    <link rel="apple-touch-icon-precomposed" href="http://university.sensiolabs.com/bundles/app/new/images/slu-ico.png">
+</head>
+<body style="padding-top: 96px;">
+<div id="sln" style="height: 36px;"><div class="sln-bar"><div class="sln-bar-inner"><div class="sln-network"><a href="http://university.sensiolabs.com/katas/001#" class="sln-hidden-phone">SensioLabs<span>World</span></a><a href="http://university.sensiolabs.com/katas/001#" class="sln-visible-phone">SL<span>W</span></a></div> <div class="sln-ad"><a href="https://blackfire.io/" data-ga="blackfire" class="sln-visible-phone"><img src="./Katas1_XML_files/1c5498dd-0649-4d42-af4b-1de957825f62.png">Blackfire.io</a><a href="https://blackfire.io/" data-ga="blackfire" class="sln-visible-tablet"><img src="./Katas1_XML_files/1c5498dd-0649-4d42-af4b-1de957825f62.png">Blackfire.io: Fire up your PHP apps performance</a><a href="https://blackfire.io/" data-ga="blackfire" class="sln-visible-desktop"><img src="./Katas1_XML_files/1c5498dd-0649-4d42-af4b-1de957825f62.png">Blackfire.io: Fire up your PHP apps performance</a></div>  <div class="sln-user"> <a class="sln-user-connected" href="http://university.sensiolabs.com/katas/001#"><img src="./Katas1_XML_files/05342fd3-47df-4d96-925f-e37bdca5169a.png" width="30" height="30" alt="Lataoui Hassine"><span class="sln-user-name sln-hidden-phone">Lataoui Hassine</span></a> </div>
+    </div>
+    <div class="sln-dropdown-network sln-dropdown sln-hidden"><div class="sln-container"><div class="sln-row"><div class="sln-span6"><div class="sln-row"><div class="sln-span3"><img src="./Katas1_XML_files/sensiolabs.png" alt="SensioLabs"><p>Since 1998, SensioLabs has been promoting the Open-Source software movement by providing quality and performant web application development products, trainings,  and consulting. SensioLabs also supports multiple important Open-Source projects. <br><a data-ga="sln_learn_more" href="http://sensiolabs.com/en">Learn more</a></p><div><a data-ga="sln_sl_international" href="http://sensiolabs.com/en">International</a></div><ul class="sln-websites"><li>Local:</li><li class="first"><a data-ga="sln_sl_FR" href="http://sensiolabs.com/fr">France</a></li><li><a data-ga="sln_sl_DE" href="http://sensiolabs.de/">Deutschland</a></li><li><a data-ga="sln_sl_UK" href="http://sensiolabs.co.uk/">UK</a></li></ul></div><div class="sln-span3 sln-ads"><h2>In the Spotlight</h2><div><a data-ga="sln_insight_thumb" href="https://insight.sensiolabs.com/"><img src="./Katas1_XML_files/sensiolabsinsight.png" alt="SensioLabsInsight"></a></div><div><a data-ga="sln_blackfire_thumb" href="https://blackfire.io/"><img src="./Katas1_XML_files/blackfire.png" alt="Blackfire"></a></div></div></div></div><div class="sln-span6 sln-products-listing sln-right-box"><div class="sln-row"><div class="sln-span3"><h2>Open Source</h2><ul><li><a data-ga="sln_sf" href="http://symfony.com/">Symfony - Web framework</a></li><li><a data-ga="sln_twig" href="http://twig.sensiolabs.org/">Twig - Templating</a></li><li><a data-ga="sln_silex" href="http://silex.sensiolabs.org/">Silex - Micro-framework</a></li><li><a data-ga="sln_swift" href="http://www.swiftmailer.org/">Swift Mailer - E-Mailing</a></li></ul></div><div class="sln-span3"><h2>Products</h2><ul><li><a data-ga="sln_insight" href="https://insight.sensiolabs.com/">Insight: PHP Quality</a></li><li><a data-ga="sln_profiler" href="https://blackfire.io/">Blackfire: Web App performance</a></li><li><a data-ga="sln_security_checker" href="https://security.sensiolabs.org/">Security checker</a></li></ul></div></div><div class="sln-row"><div class="sln-span3"><h2>Solutions &amp; Services</h2><ul><li><a data-ga="sln_training" href="https://training.sensiolabs.com/">Training</a></li><li><a data-ga="sln_certification" href="https://sensiolabs.com/certification">Certification</a></li><li><a data-ga="sln_services" href="https://sensiolabs.com/solutions">Technical Solutions</a></li><li><a data-ga="sln_support" href="https://sensiolabs.com/support">Support</a></li><li><a data-ga="sln_experts" href="http://expert.sensiolabs.com/">Experts</a></li></ul></div><div class="sln-span3"><h2>Community</h2><ul><li><a data-ga="sln_connect" href="https://connect.sensiolabs.com/">Community</a></li><li><a data-ga="sln_live" href="http://live.symfony.com/">Conferences</a></li><li><a data-ga="sln_youtube" href="https://www.youtube.com/user/SensioLabs">Videos</a></li><li><a data-ga="sln_partners" href="https://sensiolabs.com/en/partnership/overview.html">Partners</a></li><li><a data-ga="sln_job_board" href="http://jobs.sensiolabs.com/">Job Board</a></li></ul></div></div></div><div class="sln-right-box sln-our-blogs"><div class="sln-row "><div class="sln-span5"><h2>Our Blogs</h2>&nbsp;&nbsp;&nbsp;
+                        <a href="http://symfony.com/blog/">Symfony</a>,
+                        <a href="http://blog.sensiolabs.com/">SensioLabs</a>,
+                        <a href="http://blog.insight.sensiolabs.com/">Insight</a>,
+                        and <a href="http://blog.blackfire.io/">Blackfire</a>.
+                    </div></div></div></div></div></div>
+    <div class="sln-dropdown-user sln-dropdown sln-hidden"><div class="sln-container"><div class="sln-row"><div class="sln-user-actions sln-span3"><h2>Your actions</h2><ul> <li><a href="https://connect.sensiolabs.com/">Edit your profile</a></li><li class="sln-separator"></li><li><a href="http://university.sensiolabs.com/logout">Logout</a></li> </ul></div><div class="sln-span9 sln-notifications-container"><h2>Good job, you don't have any unread notification</h2><a href="https://connect.sensiolabs.com/notifications">View all your notifications.</a></div></div></div></div>
+</div></div>
+<header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" style="top: 36px;" role="banner">
+    <div class="container">
+        
+
+
+
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="http://university.sensiolabs.com/"><img src="./Katas1_XML_files/sl-university.png" alt="logo" style="height: 60px"></a>
+</div>
+<div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://university.sensiolabs.com/test">Test</a></li>
+
+
+                    <li><a href="http://university.sensiolabs.com/me">Dashboard</a></li>
+
+
+                    <li class="dropdown">
+    <a href="http://university.sensiolabs.com/katas/001#" class="dropdown-toggle" data-toggle="dropdown">Learn <i class="icon-angle-down"></i></a>
+    <ul class="dropdown-menu">
+                <li><a href="http://university.sensiolabs.com/katas">Katas</a></li>
+
+                <li><a href="http://university.sensiolabs.com/skills/">Skill acquisition</a></li>
+
+            </ul>
+</li>
+
+
+                    </ul>
+</div>
+
+    </div>
+</header>
+
+<section id="title" class="emerald">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <h1>Katas</h1>
+            </div>
+            <div class="col-sm-5">
+                <ul class="nav nav-pills pull-right">
+    <li><a href="http://university.sensiolabs.com/katas">Katas</a></li>
+</ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="container" style="min-height:700px;background: url(/bundles/app/new/images/slider/bg1.gif) no-repeat;background-size: 150px;background-position: bottom 10px right;">
+
+
+<div class="row">
+    <h2>Kata One — PHP: XML
+</h2>
+    <div class="col-md-7 col-md-offset-1 kata-story">
+        <h3>Story</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4>Extract wikipedia "Picture of the day" for a month in a CSV file</h4>
+<ul>
+<li>Load the HTML in a DOMDocument object</li>
+<li>Filter this document with a DOMXpath</li>
+<li>Use a XSLTProcessor to transform the input to a csv file</li>
+</ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <h3>Subject</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4>PHP</h4>
+<p><span class="label label-default">DOMDocument</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10 col-md-offset-1 kata-steps">
+        <h3>Steps</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <ol>
+<li>
+<p>Turn off potential warnings because of incorrect XML.</p>
+</li>
+<li>
+<p>Create a <code>DOMDocument</code> and load the HTML with the <code>loadHTML</code> method.</p>
+</li>
+<li>
+<p>Create a <code>DOMXPath</code>, and perform a query to select only the table containing all images.</p>
+</li>
+<li>
+<p>Create a new <code>DOMDocument</code> and import the selected nodes in it.</p>
+<blockquote>
+<p><em>Note: we do this to simplify the XSL stylesheet.</em></p>
+</blockquote>
+</li>
+<li>Create a XSL stylesheet to create a CSV file with format:
+<pre><code>"day (h2)":"description (img alt)";"url (img src)"</code></pre></li>
+<li>Restore previous warning mode.</li>
+</ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <h3>Help</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <ul>
+<li><a href="http://en.wikipedia.org/wiki/XSLT">http://en.wikipedia.org/wiki/XSLT</a></li>
+<li><a href="http://php.net/manual/en/class.domdocument.php">http://php.net/manual/en/class.domdocument.php</a></li>
+<li><a href="http://php.net/manual/en/class.domxpath.php">http://php.net/manual/en/class.domxpath.php</a></li>
+<li><a href="http://php.net/manual/en/class.xsltprocessor.php">http://php.net/manual/en/class.xsltprocessor.php</a></li>
+<li>[<a href="https://github.com/symfony/symfony/blob/33ff623cb04487560ffe5241ab2c063edc495751/src/Symfony/Component/Config/Util/XmlUtils.php#L41-L104](How">https://github.com/symfony/symfony/blob/33ff623cb04487560ffe5241ab2c063edc495751/src/Symfony/Component/Config/Util/XmlUtils.php#L41-L104](How</a> to load very cleanly an XML document)</li>
+</ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 kata-solution">
+            <h3>Solution</h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>picoftheday.php</h4>
+<div class="prism-show-language"><div class="prism-show-language-label">PHP</div></div><pre class=" language-php"><code class=" language-php"><span class="token delimiter">&lt;?php</span>
+
+<span class="token variable">$url</span> <span class="token operator">=</span> <span class="token string">'http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Image_du_jour/mars_2015'</span><span class="token punctuation">;</span>
+<span class="token variable">$cacheDir</span> <span class="token operator">=</span> <span class="token string">'.cache'</span><span class="token punctuation">;</span>
+<span class="token variable">$cacheFile</span> <span class="token operator">=</span> <span class="token variable">$cacheDir</span><span class="token punctuation">.</span><span class="token string">'/'</span><span class="token punctuation">.</span><span class="token function">sha1</span><span class="token punctuation">(</span><span class="token variable">$url</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">/**
+ * Turn off XML errors
+ */</span>
+<span class="token variable">$internalErrors</span> <span class="token operator">=</span> <span class="token function">libxml_use_internal_errors</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">/**
+ * Load file and cache it
+ */</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">file_exists</span><span class="token punctuation">(</span><span class="token variable">$cacheDir</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">mkdir</span><span class="token punctuation">(</span><span class="token variable">$cacheDir</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">file_exists</span><span class="token punctuation">(</span><span class="token variable">$cacheFile</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$content</span> <span class="token operator">=</span> <span class="token function">file_get_contents</span><span class="token punctuation">(</span><span class="token variable">$cacheFile</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token variable">$content</span> <span class="token operator">=</span> <span class="token function">file_get_contents</span><span class="token punctuation">(</span><span class="token variable">$url</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">file_put_contents</span><span class="token punctuation">(</span><span class="token variable">$cacheFile</span><span class="token punctuation">,</span> <span class="token variable">$content</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/**
+ * Read HTML
+ */</span>
+<span class="token variable">$doc</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DOMDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$doc</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">loadHTML</span><span class="token punctuation">(</span><span class="token variable">$content</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">/**
+ * Filter document
+ */</span>
+<span class="token variable">$xpath</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DOMXpath</span><span class="token punctuation">(</span><span class="token variable">$doc</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$elements</span> <span class="token operator">=</span> <span class="token variable">$xpath</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">'//*[@id="mw-content-text"]/table'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$table</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DOMDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$elements</span> <span class="token keyword">as</span> <span class="token variable">$elt</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$copy</span> <span class="token operator">=</span> <span class="token variable">$table</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">importNode</span><span class="token punctuation">(</span><span class="token variable">$elt</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$table</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">appendChild</span><span class="token punctuation">(</span><span class="token variable">$copy</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/**
+ * Transform to CSV
+ */</span>
+<span class="token variable">$xsldoc</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DOMDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$xsldoc</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">'pic2csv.xsl'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$xsl</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XSLTProcessor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$xsl</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">importStyleSheet</span><span class="token punctuation">(</span><span class="token variable">$xsldoc</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// output to STDOUT</span>
+<span class="token keyword">echo</span> <span class="token variable">$xsl</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">transformToXML</span><span class="token punctuation">(</span><span class="token variable">$table</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// output to file</span>
+<span class="token comment" spellcheck="true">//file_put_contents('pics.csv', $xsl-&gt;transformToXML($table));</span>
+
+<span class="token comment" spellcheck="true">/**
+ * Restore previous mode for XML errors
+ */</span>
+<span class="token function">libxml_use_internal_errors</span><span class="token punctuation">(</span><span class="token variable">$internalErrors</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>pic2csv.xsl</h4>
+<div class="prism-show-language"><div class="prism-show-language-label">XML</div></div><pre class=" language-xml"><code class=" language-xml"><span class="token prolog">&lt;?xml version="1.0"?&gt;</span>
+&lt;xsl:stylesheet version = "1.0" xmlns:xsl = "http://www.w3.org/1999/XSL/Transform"&gt;
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>output</span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>template</span> <span class="token attr-name">match</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>apply-templates</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>template</span> <span class="token attr-name">match</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>table<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>for-each</span> <span class="token attr-name">select</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tr/td<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>if</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>count(*)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>value-of</span> <span class="token attr-name">select</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>concat(<span class="token punctuation">'</span>&amp;#34;<span class="token punctuation">'</span>, normalize-space(h2/span/text()), <span class="token punctuation">'</span>&amp;#34;<span class="token punctuation">'</span>)<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>text</span><span class="token punctuation">&gt;</span></span>;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>text</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>if</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.//img<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>value-of</span> <span class="token attr-name">select</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>concat(<span class="token punctuation">'</span>&amp;#34;<span class="token punctuation">'</span>, .//img/@alt, <span class="token punctuation">'</span>&amp;#34;<span class="token punctuation">'</span>)<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>text</span><span class="token punctuation">&gt;</span></span>;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>text</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>value-of</span> <span class="token attr-name">select</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>concat(<span class="token punctuation">'</span>&amp;#34;http:<span class="token punctuation">'</span>, .//img/@src, <span class="token punctuation">'</span>&amp;#34;<span class="token punctuation">'</span>)<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>if</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>text</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>text</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>if</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>for-each</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>stylesheet</span><span class="token punctuation">&gt;</span></span></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="midnight-blue" style="padding-top: 10px;padding-bottom: 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                © 2015 - 2016 <a target="_blank" href="http://sensiolabs.com/" title="SensioLabs"> <img src="./Katas1_XML_files/sensiolabs-logo.png" alt="SensioLabs" width="90" style="width:90px;padding-bottom:3px;"></a>
+            </div>
+            <div class="col-sm-4" style="text-align:center">
+                <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart-o" aria-hidden="true"></i> by SensioLabs University
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script async="true" type="text/javascript" src="./Katas1_XML_files/event" data-owner="criteo-tag"></script><script async="" src="./Katas1_XML_files/analytics.js.téléchargement"></script><script type="text/javascript" async="" src="./Katas1_XML_files/ld.js.téléchargement"></script><script type="text/javascript" async="" src="./Katas1_XML_files/dc.js.téléchargement"></script><script src="./Katas1_XML_files/jquery.js.téléchargement"></script>
+<script src="./Katas1_XML_files/bootstrap.min.js.téléchargement"></script>
+<script src="./Katas1_XML_files/jquery.prettyPhoto.js.téléchargement"></script>
+<script src="./Katas1_XML_files/jquery.isotope.min.js.téléchargement"></script>
+<script src="./Katas1_XML_files/main.js.téléchargement"></script>
+
+<script type="text/javascript" src="./Katas1_XML_files/sln.js.téléchargement"></script>
+<script type="text/javascript">
+$(function() {
+              SLNBar.isAuthenticated = true;
+       SLNBar.uuid = '05342fd3-47df-4d96-925f-e37bdca5169a';
+       SLNBar.fullName = 'Lataoui Hassine';
+       SLNBar.actions = {
+           '0': { 'url': SLNBar.urlConnectHomepage, 'label': "Edit your profile" }
+       };
+       SLNBar.separatedActions = {
+           '0': { 'url': '/logout', 'label' : "Logout" }
+       };
+              $('#sln').html(SLNBar.render());
+       SLNBar.bindEvents();
+   });
+</script>
+<script src="./Katas1_XML_files/prism.js.téléchargement"></script>
+<script src="./Katas1_XML_files/prism-show-language.min.js.téléchargement"></script>
+<script src="./Katas1_XML_files/prism-php.min.js.téléchargement"></script>
+<script src="./Katas1_XML_files/prism-php-extras.min.js.téléchargement"></script>
+<script src="./Katas1_XML_files/prism-twig.min.js.téléchargement"></script>
+<script src="./Katas1_XML_files/prism-yaml.min.js.téléchargement"></script>
+<script src="./Katas1_XML_files/prism-json.min.js.téléchargement"></script>
+
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+})
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79731882-1', 'university.sensiolabs.com');
+  ga('send', 'pageview');
+    ga('set', 'userId', '05342fd3-47df-4d96-925f-e37bdca5169a');
+  </script>
+
+
+<div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="./Katas1_XML_files/dis.html" style="display: none;"></iframe></div></body></html>

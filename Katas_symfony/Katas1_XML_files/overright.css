@@ -1,0 +1,81 @@
+.navbar-brand {
+    padding: 0;
+}
+
+.img-user {
+    border-radius: 50%;
+    height: 30px !important;
+    width: 30px !important;
+    margin-top: -5px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#main-slider .carousel .item{
+    background-color: #5ba8a5;
+}
+
+body {
+    padding-top: 60px;
+}
+
+.emerald {
+    background-color: #39b59f;
+}
+
+.container {
+    max-width: 1245px;
+}
+
+.home-welcome {
+    background-image: none;
+    padding: 0;
+}
+
+footer a, footer a:link, footer a:visited {
+    text-decoration: none;
+}
+
+.pure-u-1-2, .pure-u-12-24 {
+    width: 100%;
+}
+
+.time .label {
+    color: black;
+}
+
+.black {
+    color: #000000;
+}
+
+body > section {
+    padding: 15px 0;
+}
+
+.main-example .count {
+    font-size: 2.2em;
+}
+
+.tab-margin {
+    margin-left: 71px
+}
+
+a:hover,
+a:focus {
+    color: #7e7e7e;
+    text-decoration: none;
+    outline: none;
+}
+
+#theory-1 {
+    margin: 80px 0 0 0;
+}
+
+.btn-social.btn-github {
+    background: none repeat scroll 0 0 #000000;
+}
+
+.btn-social.btn-tw {
+    background: none repeat scroll 0 0 #5bceff;
+}
