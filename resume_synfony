@@ -1,0 +1,185 @@
+<h2>*********************kernel*******************************************************</h2>
+<pre>
+dans le kernel symfony on appel ses bundles pour le rendre présent pour l'application:
+   $bundles = array(
+            new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+            new Symfony\Bundle\TwigBundle\TwigBundle(),
+            // ...
+        );
+</pre>
+<h2>*********************les uses*******************************************************</h2>
+<pre>
+pour retourner une reponse d'un appel http:
+use Symfony\Component\HttpFoundation\Response;
+
+pour recuperé le request:
+use Symfony\Component\HttpFoundation\Request;
+
+pour route utilisé dans l'annotation dans le controller @Route:
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+
+pour utiliser route et routecollection dans controller
+use Symfony\Component\Routing\RouteCollection;
+use Symfony\Component\Routing\Route;
+
+pour extends de Service Container de controller pour render (template par exemple)
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+</pre>
+<h2>*********************Routing*******************************************************</h2>
+<pre>
+Loading Routes:
+# app/config/routing.yml
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+par annotation dans le controller
+    /**
+     * @Route(
+     *     "/articles/{_locale}/{year}/{title}.{_format}",
+     *     defaults={"_format": "html"},
+     *     requirements={
+     *         "_locale": "en|fr",
+     *         "_format": "html|rss",
+     *         "year": "\d+"
+     *     }
+     * )
+     * @Method({"GET","HEAD"})
+     */
+    public function showAction($_locale, $year, $title)
+    {
+    }
+
+Generating URLs    
+$url = $this->generateUrl(
+            'blog_show',
+             array('slug' => 'my-blog-post')
+);
+
+=====> $url = $this->container->get('router')->generate(
+         'blog_show',
+          array('slug' => 'my-blog-post')
+       );
+
+Generating Absolute URLs 
+$this->generateUrl('blog_show', array('slug' => 'my-blog-post'), UrlGeneratorInterface::ABSOLUTE_URL);      
+
+url on twig:
+{{ path('blog_show', {'slug': 'slug-value'}) }}
+
+</pre>
+
+<h2>*********************Controller*******************************************************</h2>
+<pre>
+controler:   lire l'information de request object et cree le la reponse object(HTML , JSON, XML)
+
+Symfony comes with an optional base Controller class,If you extend it ,you'll get access to a number of helper methods and the service container
+exp of helper of service container : 
+    $url=$this->generateUrl('blog_show', array('slug' => 'slug-value'));
+    ou 
+    $this->redirectToRoute('homepage');
+     // do a permanent - 301 redirect
+    return $this->redirectToRoute('homepage', array(), 301);
+
+    // redirect to a route with parameters
+    return $this->redirectToRoute('blog_show', array('slug' => 'my-page'));
+
+    // redirect externally
+    return $this->redirect('http://symfony.com/doc');
+
+    redirectToRoute  helper equivaut à cette reponse:
+
+    use Symfony\Component\HttpFoundation\RedirectResponse;
+    public function indexAction()
+    {
+        return new RedirectResponse($this->generateUrl('homepage'));
+    }
+
+    Rendering Templates
+   // renders app/Resources/views/lucky/number.html.twig
+   return $this->render('lucky/number.html.twig', array('name' => $name));
+
+   Accessing other Services container disponible en extends controller:
+
+   $templating = $this->get('templating');
+   $router = $this->get('router');
+   $mailer = $this->get('mailer');
+
+   pour afficher les services dans la console: php bin/console debug:container
+
+   pour  retourner une exception error 404, il faut extendre the base controller  
+   et puis on utilise ce special exception : throw $this->createNotFoundException('The product does not exist');
+
+ 
+
+   $_SESSION:
+    use Symfony\Component\HttpFoundation\Request;
+    $session = $request->getSession();
+
+    // store an attribute for reuse during a later user request
+    $session->set('foo', 'bar');
+
+    // get the attribute set by another controller in another request
+    $foobar = $session->get('foobar');
+
+    // use a default value if the attribute doesn't exist
+    $filters = $session->get('filters', array());
+
+
+   Flash Messages:
+   use Symfony\Component\HttpFoundation\Request;
+   
+   // $this->addFlash is equivalent to $request->getSession()->getFlashBag()->add
+   $this->addFlash(
+            'notice',
+            'Your changes were saved!'
+    );
+
+    dans Twig:
+    {# app/Resources/views/base.html.twig #}
+    {% for flash_message in app.session.flashBag.get('notice') %}
+        <div class="flash-notice">
+            {{ flash_message }}
+        </div>
+    {% endfor %}
+
+    The Request Object:
+    use Symfony\Component\HttpFoundation\Request;
+    
+    //$_GET:    
+    $page = $request->query->get('page', 1);
+    
+    //$_POST:    
+    $page = request->request->get('page');
+    
+    // retrieve SERVER variables
+    $request->server->get('HTTP_HOST');
+
+    // retrieves an instance of UploadedFile identified by foo
+    $request->files->get('foo');
+
+    // retrieve a COOKIE value
+    $request->cookies->get('PHPSESSID');
+
+    // retrieve an HTTP request header, with normalized, lowercase keys
+    $request->headers->get('host');
+    $request->headers->get('content_type');
+
+
+    The Response Object:
+    use Symfony\Component\HttpFoundation\Response;
+
+    // create a simple Response with a 200 status code (the default)
+    $response = new Response('Hello '.$name, Response::HTTP_OK);
+
+    // create a CSS-response with a 200 status code
+    $response = new Response('<style> ... </style>');
+    $response->headers->set('Content-Type', 'text/css');
+
+
+    use Symfony\Component\HttpFoundation\JsonResponse;
+    // returns '{"username":"jane.doe"}' and sets the proper Content-Type header
+    return $this->json(array('username' => 'jane.doe'));
+    </pre>
