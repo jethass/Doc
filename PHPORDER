@@ -62,3 +62,70 @@ supression de declaration obselète
 -short closure
 -catch many exception
 -gère visibility constant
+
+
+//****************************************************Resume*****************************************************************/
+php 5.3 : namspace /closure
+php 5.4: trait /short array
+php 5.5 : generator yeild
+php 5.6: use const use function
+
+FOS User Bundle
+StofDoctrineExtensionsBundle : Timestampableentity
+NelmioApiDocBundle
+FOSRestBundle
+Jsrouting
+LiipImagineBundle 
+KnpPaginatorBundle
+
+Le cross-site scripting (XSS), est un type de faille de sécurité:  htmlspecialchars ,strips tags
+
+L'injection de dépendances, c'est précisément ça:
+Si une classe a besoin d'une instance d'une autre classe, que ce soit dans son constructeur
+ ou dans une autre méthode
+ alors elle prend cette instance directement en paramètre 
+ et ne s'occupe certainement pas de l'instancier elle-même. 
+ 
+
+@@ Cache @@
+
+# vider les caches
+php bin/console cache:clear --env=prod
+php bin/console cache:clear --env=dev
+
+
+@@ Base de données @@
+
+# créer la base de données
+php bin/console doctrine:database:create
+
+# mettre à jour / créer les tables
+php bin/console doctrine:schema:update --force
+
+
+@@ Entity @@
+
+# générer une entité
+php bin/console doctrine:generate:entity
+
+# CRUD à partir d'une entité
+php bin/console generate:doctrine:crud
+
+
+@@ Bundle @@
+
+# générer un bundle 
+php bin/console generate:bundle --namespace=BundleName --format=yml
+
+
+@@ Controller @@
+
+# générer un contrôleur
+php bin/console generate:controller 
+ou 
+php bin/console generate:controller --controller=BundleName:ControllerName
+
+
+@@ Debug @@
+# déboger les routes 
+php bin/console router:debug
