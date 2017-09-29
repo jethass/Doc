@@ -1,0 +1,64 @@
+PHP 5.3
+-----------------------------------------------------------------------------
+-Namespace 
+-Goto
+-closure , function avec des return
+-Simplification d'ecriture: $var=$x ?: '' =>   $var= $x ? $x : ""
+-implémentation complète de DateTime 
+-extention INTL et PHAR(sorte de packging d composer)
+
+PHP 5.4
+-----------------------------------------------------------------------------
+-utilisation  des fonction dans les paramètre de function
+-Les Traits
+-sytax court pour tableau avec []
+-acces au objet dé l'istantiation : new Foo->bar()
+-ajout format binaire
+-extention sessionpeut suivre la progression de l'uplaod
+
+
+PHP 5.5
+-----------------------------------------------------------------------------
+-ajout de génerateur "yield"
+-Ajout Finaly dans le try catch:  
+try{
+	
+}catch (\Exception $e){
+	
+}Finaly{
+	$echo un truc
+}
+
+-function list suporte dans foreach
+-resolution de nom de classe via ::class
+-OPcache
+
+PHP 5.6
+-----------------------------------------------------------------------------
+-declaration des constantes dans le namespace
+-ajout operateur ...
+  function liste2(...$tab){
+
+  }
+  liste2($a,$b,$c);
+  -operateur ** **= qui sont apparue
+
+HHVM : crée par facebook en 2012
+-----------------------------------------------------------------------------
+
+PHP 7.0.X  en 2015
+-----------------------------------------------------------------------------
+Gain de performance
+supression de declaration obselète
+-fatal error  -->devenu en Exception on peut le catcher avec throwable
+- ajout de mode E_STRICT
+-foreach par reference  
+-ajout le retour de function
+-  operateur ?? "if isset"
+- operateur <=>   pour comparaison
+- classe anonyme
+-generator retur expression
+-generator delegation
+-short closure
+-catch many exception
+-gère visibility constant
